@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: white;
+  color: black;
+}
+/* nav links */
+.navbar-toggler {
+
+}
+.toggler-icon {
+  font-size: 1.5em;
+  color: pink; /*color of col menu*/
+}
+.nav-link {
+  color: black;  /*before putting cursor*/
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover { /*after putting cursor*/
+  color: purple;
+}
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: black;
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid black;
+  color: black;
+  border-radius: 1rem;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: pink;
+  border-color: pink;
+  color: white;
+}
+.cart-info:hover .cart-info__icon {
+  color: white;
+}
+/* end of info icons */
+/* banner */
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), /*why!?*/
+    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: purple;
+  margin-top: -4rem;
+}
+.banner-title {
+  color: #ff00ff;
+  font-size: 4rem;
+}
+.banner-link:hover {
+  font-size: 2rem;
+  color: black;
+  background: black;
+  color: purple;
+}
+/* endo of banner */
+
+}
+
+/* about */
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before { /*inserts something before the content of each selected element*/
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid pink;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*end of  about */
+
+/* store items */
+.store {
+  background-color: pink;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: pink;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(10%, 50%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: white;
+}
+.store-item-value {
+  color: black;
+}
+/*end of  store items */
+.search-box {
+  background: grey;
+  color: black;
+}
